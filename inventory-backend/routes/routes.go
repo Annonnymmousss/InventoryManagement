@@ -8,17 +8,17 @@ import (
 )
 
 func SetupRoutes(e *echo.Echo) {
-    // Health check route
+  
     e.GET("/", func(c echo.Context) error {
         return c.JSON(http.StatusOK, map[string]string{
             "message": "Inventory Management API is running!",
         })
     })
 
-    // API routes
+
     api := e.Group("/api")
 
-    // Product routes
+
     products := api.Group("/products")
     products.GET("", controllers.GetProducts)
     products.GET("/:id", controllers.GetProduct)
