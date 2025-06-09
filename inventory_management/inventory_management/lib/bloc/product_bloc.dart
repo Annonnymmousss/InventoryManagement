@@ -1,4 +1,4 @@
-// lib/bloc/product_bloc.dart
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:inventory_management/bloc/product_event.dart';
 import 'package:inventory_management/bloc/product_state.dart';
