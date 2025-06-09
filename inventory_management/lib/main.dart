@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
     return BlocProvider(
       create: (context) => ProductBloc(ProductRepository())..add(LoadProducts()),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Inventory Management',
         theme: ThemeData(
           primarySwatch: Colors.blue,
